@@ -1,0 +1,43 @@
+{
+    "cSpell.words": [
+      "app",
+      "appbar",
+      "arial",
+      "assets",
+      "balham",
+      "chartjs",
+      "data",
+      "deburr",
+      "drawer",
+      "gojs",
+      "haspopup",
+      "helvetica",
+      "json",
+      "json-server",
+      "middlewares",
+      "request",
+      "rescan",
+      "roboto",
+      "securex",
+      "securex app",
+      "securexapi",
+      "securexapi v assets summary",
+      "securityrisk",
+      "segoe",
+      "server",
+      "set",
+      "set detials data",
+      "sexurex",
+      "summary",
+      "swipeable",
+      "swipeable drawer",
+      "topbar",
+      "watch"
+    ],
+
+    "editor.tabSize": 2,
+
+    "editor.insertSpaces": true,
+  
+    "editor.detectIndentation": false
+}
