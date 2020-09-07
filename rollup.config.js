@@ -1,5 +1,6 @@
 import svelte from 'rollup-plugin-svelte';
 import resolve from '@rollup/plugin-node-resolve';
+import replace from '@rollup/plugin-replace';
 import commonjs from '@rollup/plugin-commonjs';
 import livereload from 'rollup-plugin-livereload';
 import { terser } from 'rollup-plugin-terser';
@@ -55,7 +56,16 @@ export default {
 			browser: true,
 			dedupe: ['svelte']
 		}),
-		commonjs(),
+    commonjs(),
+    
+    replace({
+      // 2 level deep object should be stringify
+      process: JSON.stringify({
+        env: {
+          COUNTRY: process.env.COUNTRY,
+        }
+      }),
+    }),
 
 		// In dev mode, call `npm run start` once
 		// the bundle has been generated
